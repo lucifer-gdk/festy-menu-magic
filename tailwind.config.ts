@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,18 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Custom colors for the Shinchan theme
+				shinchan: {
+					sky: '#8de0ff',
+					red: '#e63946',
+					cloud: '#ffffff',
+					pink: '#ff80ab',
+					yellow: '#ffd54f',
 				}
+			},
+			fontFamily: {
+				comic: ['"Comic Sans MS"', 'cursive'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +96,21 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' },
+				},
+				'bounce-slow': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-15px)' },
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 6s ease-in-out infinite',
+				'bounce-slow': 'bounce-slow 4s ease-in-out infinite'
 			}
 		}
 	},

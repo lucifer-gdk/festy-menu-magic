@@ -1,69 +1,54 @@
-# Welcome to your Lovable project
+
+# Shinchan's The Chill Spot - College Fest Menu Website
+
+A playful and colorful menu website for your college fest stall, featuring a Shinchan theme.
 
 ## Project info
 
 **URL**: https://lovable.dev/projects/313a5059-582a-41b4-b13c-f16792d8739a
 
-## How can I edit this code?
+## Customization
 
-There are several ways of editing your application.
+### Adding Images
 
-**Use Lovable**
+1. Add character images to `/public/characters/`
+2. Add milkshake images to `/public/milkshakes/`
+3. Add special menu item images to `/public/specials/`
+4. Add combo images to `/public/combos/`
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/313a5059-582a-41b4-b13c-f16792d8739a) and start prompting.
+### Modifying Menu Items
 
-Changes made via Lovable will be committed automatically to this repo.
+1. Open `src/data/menuData.ts`
+2. Edit the array of menu items to add, remove or modify items
+3. Make sure each item has the following properties:
+   - id
+   - name
+   - price
+   - image (path to image starting with /)
+   - category ('milkshakes', 'specials', or 'combos')
+   - description (optional)
 
-**Use your preferred IDE**
+### Updating Contact Information
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+1. Open `src/data/menuData.ts`
+2. Edit the `contactInfo` object with your actual contact numbers
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## How to use this website
 
-Follow these steps:
+1. Display this website on a tablet/laptop at your college fest stall
+2. You can print out QR codes linking to this website for easier access
+3. Share the link on your social media channels to promote your stall
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## How to customize the design
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+1. To change colors, edit the `tailwind.config.ts` file
+2. To modify animations or styles, edit the `src/index.css` file
+3. To change the layout or structure, edit the components in `src/components/`
 
-# Step 3: Install the necessary dependencies.
-npm i
+## Technologies Used
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
 - React
-- shadcn-ui
+- TypeScript
 - Tailwind CSS
+- shadcn-ui components
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/313a5059-582a-41b4-b13c-f16792d8739a) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
