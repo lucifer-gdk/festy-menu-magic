@@ -14,14 +14,17 @@ const MenuItem: React.FC<MenuItemProps> = ({ item }) => {
     <Card 
       className={`overflow-hidden transition-all duration-300 transform ${
         isHovered ? 'scale-105 shadow-lg' : ''
-      } bg-white bg-opacity-80 border-2 border-blue-300`}
+      } bg-white bg-opacity-80`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       <CardContent className="p-4 flex flex-col items-center">
-        <div className="h-32 w-32 mb-3 flex items-center justify-center">
-          <div className="w-full h-full bg-contain bg-center bg-no-repeat" 
-               style={{ backgroundImage: `url(${item.image})` }}></div>
+        <div className="h-32 w-32 mb-3 flex items-center justify-center rounded-full overflow-hidden bg-shinchan-sky bg-opacity-20">
+          <img 
+            src={item.image} 
+            alt={item.name}
+            className="w-full h-full object-contain p-2" 
+          />
         </div>
         <h3 className="font-bold text-shinchan-red text-lg mb-1">{item.name}</h3>
         <p className="text-shinchan-red font-bold">₹{item.price}/-</p>

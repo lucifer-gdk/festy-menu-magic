@@ -86,11 +86,11 @@
 }
 
 .menu-section {
-  @apply relative bg-white bg-opacity-80 rounded-3xl p-4 md:p-6 mb-6 border-4 border-shinchan-red;
+  @apply relative bg-white bg-opacity-80 rounded-3xl p-4 md:p-6 mb-6 border-blue-300 border-4;
 }
 
 .cloud-title {
-  @apply relative flex items-center justify-center bg-white rounded-full py-2 px-8 border-2 border-blue-300 text-shinchan-red font-bold text-xl md:text-2xl;
+  @apply relative flex items-center justify-center bg-white rounded-full py-2 px-12 text-shinchan-red font-bold text-xl md:text-2xl;
   width: fit-content;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -98,7 +98,7 @@
 .cloud-title:before,
 .cloud-title:after {
   content: '';
-  @apply absolute bg-white rounded-full border-2 border-blue-300;
+  @apply absolute bg-white rounded-full;
 }
 
 .cloud-title:before {
@@ -114,4 +114,3 @@
   top: -20%;
   right: -30%;
 }
-
